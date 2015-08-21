@@ -8,7 +8,7 @@ $(document).ready(function(){
                 tallestcolumn = currentHeight;
             }
         });
-        columns.height(tallestcolumn);
+        columns.height(tallestcolumn); 
     };
     setEqualHeight( $('.change-tarif-wrap._ats .price p') );
     
