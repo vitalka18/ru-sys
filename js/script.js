@@ -16,6 +16,7 @@ $(document).ready(function(){
       $(this).toggleClass('active');
       var $that = $(this);
       var $open = $( $that.attr('data-hide') );
+      $open.parent().toggleClass('active');
       $open.slideToggle(800);
     });
 
@@ -99,12 +100,12 @@ $(document).ready(function(){
             $(this).parents('.contenteBlock').find('.sbm-btn').removeClass('invalid');
           }
           if($(this).hasClass('namei') ){
-            if(!$(this).parents('.form-group').find('.errorMsg').length)
-            $(this).parents('.form-group').append('<div class="errorMsg">Это поле необходимо заполнить</div>');
-          } 
+            if(!$(this).parents('.form-group').find('.errorMsg').length){$(this).parents('.form-group').append('<div class="errorMsg">Это поле необходимо заполнить</div>');
+          } }
+            
           if($(this).hasClass('teli')){
-            if(!$(this).parents('.form-group').find('.errorMsg').length)
-            $(this).parents('.form-group').addClass('<div class="errorMsg">Введите правильный номер</div>');
+            if(!$(this).parents('.form-group').find('.errorMsg').length){ $(this).parents('.form-group').append('<div class="errorMsg">Введите правильный номер</div>');}
+            
           }
         });
         if(!$(this).hasClass('invalid')){
@@ -116,6 +117,7 @@ $(document).ready(function(){
         }
 
       });
+      $('input').change(function(){$(this).parent().removeClass('invalidElem')})
       $('.tarif-change').click(function(e){//комплексна форма 2 крок
         e.preventDefault();
         var $that = $(this),
@@ -125,7 +127,7 @@ $(document).ready(function(){
         $input.val($that.attr('data-val'))
         $wrap.removeClass('current');
         $('#contenteBlock3').addClass('current');
-        $('#contenteBlock4').find('.center .tarif').addClass($that.attr('data-color-t'))
+        $('#contenteBlock4').find('.center .tarif').addClass($that.attr('data-color-t')).text( $that.parents('.item ').find('.header-title').text() )
         $('.steps ul li').removeClass('current');
         $('.steps ul li').eq(2).addClass('current');
         $('.steps ul li').eq(1).addClass('default');
@@ -136,7 +138,7 @@ $(document).ready(function(){
         var $that = $(this),
         $wrap = $(this).parents('.contenteBlock'),
         $input = $wrap.find('input[name="ats"]');
-        $('#contenteBlock4').find('.center .ats').addClass($that.attr('data-color-t'));
+        $('#contenteBlock4').find('.center .ats').addClass($that.attr('data-color-t')).text( $that.parents('.item ').find('.header-title').text() );
         console.log($input)
         $input.val($that.attr('data-val'))
         $wrap.removeClass('current');
@@ -169,20 +171,30 @@ $(document).ready(function(){
         $.fancybox.close();
         var id = '#wayp2';
         $('html, body').animate({scrollTop : $(id).offset().top-100},800);
+        $('.center  .ats').removeClass('virt-ats fiz-ats your-ats');
+        $('.center  .tarif').removeClass('junior popular happies unlimited');
+        $('.contenteBlock').removeClass('current');
+        $('#contenteBlock1').addClass('current');
+        $('.steps ul li').removeClass('current');
+        $('.steps ul li').eq(0).addClass('current').removeClass('default');
       });
       $('.change-other-tarif ').click(function(){
+        $('.center  .tarif').removeClass('junior popular happies unlimited');
+        $('.center  .ats').removeClass('virt-ats fiz-ats your-ats');
         $('.contenteBlock').removeClass('current');
         $('#contenteBlock2').addClass('current');
         $('.steps ul li').removeClass('current');
-        $('.steps ul li').eq(1).addClass('current');
+        $('.steps ul li').eq(1).addClass('current').removeClass('default');
         $('.steps ul li').eq(2).removeClass('default');
         $('.steps ul li').eq(3).removeClass('default');
       });
       $('.change-other-ats').click(function(){
+        $('.center  .ats').removeClass('virt-ats fiz-ats your-ats');
+        $('.center  .tarif').removeClass('junior popular happies unlimited');
         $('.contenteBlock').removeClass('current');
         $('#contenteBlock3').addClass('current');
         $('.steps ul li').removeClass('current');
-        $('.steps ul li').eq(2).addClass('current');
+        $('.steps ul li').eq(2).addClass('current').removeClass('default');
         $('.steps ul li').eq(3).removeClass('default');
       });
       $('#cons-form').validate({//валыдацыя #cons-form
@@ -221,7 +233,7 @@ $(document).ready(function(){
         messages: {
           telfield2: "Введите правильный номер",
           namefield2: "Это поле необходимо заполнить",
-          textf: "Оставте коментарий"
+          textf: "Оставьте комментарий"
         }
 
       });

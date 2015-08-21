@@ -19,7 +19,7 @@ body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
 }
 .main-wrapper {
@@ -74,7 +74,7 @@ body {
 }
 .header-number .work-hours {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 .navbar {
@@ -155,7 +155,7 @@ body {
   margin: 0;
 }
 .base-info-item .text {
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   text-align: left;
   margin-left: 14px;
@@ -186,7 +186,7 @@ body {
   height: 426px;
   width: 373px;
   background: url(../images/modern-phone.png) center no-repeat;
-  top: -60px;
+  top: -56px;
   left: 35px;
 }
 .blue {
@@ -200,7 +200,7 @@ body {
   font-weight: bold;
 }
 .conect-number .smaller {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 31px;
 }
 .light-white-title {
@@ -210,37 +210,62 @@ body {
   color: #fff;
   line-height: 33px;
   margin: 5px 0 24px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.19);
 }
 .blue-container {
   background: url(../images/body-bg.png) center top no-repeat;
   height: 411px;
   margin: 41px -45px -90px;
-  padding: 50px 45px;
+  padding: 20px 45px;
 }
 .bc-right,
 .bc-left {
   width: 350px;
 }
 .bc-right {
+  margin-top: 30px;
   float: right;
 }
 .bc-left {
+  margin-top: 30px;
   float: left;
 }
 .bc-center {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
+  width: 470px;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+}
+.bc-center:after,
+.bc-center:before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: url(../images/v-line.png) center repeat-y;
+}
+.bc-center:after {
+  right: 0;
+}
+.bc-center:before {
+  left: 0;
 }
 .bc-center .title {
   font-size: 33px;
   color: #fff;
   font-weight: 700;
-  text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.19);
   margin: 1px 0 8px;
 }
 .bc-center p {
   margin: 8px 0;
+  color: #00394c;
+  font-weight: 400;
 }
 .bc-center p b {
   text-shadow: 1px 1px 0px #20c9fc;
@@ -255,11 +280,13 @@ body {
 .bc-info .from,
 .bc-info .measure {
   font-size: 20px;
+  font-weight: 400;
   color: #00394c;
 }
 .bc-info .value {
   font-size: 70px;
   color: #00394c;
+  font-weight: 700;
   text-shadow: 1px 1px 0px #20c9fc;
 }
 .get-number {
@@ -268,7 +295,7 @@ body {
   display: inline-block;
   padding: 15px 50px;
   font-size: 23px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -303,7 +330,7 @@ body {
 }
 .black-title-n {
   font-size: 33px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 .black-title-b {
@@ -314,6 +341,24 @@ body {
 }
 .atc-functions {
   padding: 5px 18px;
+  position: relative;
+}
+.atc-functions:after {
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -ms-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -o-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+}
+.atc-functions.active:after {
+  display: none;
 }
 .function-item {
   font-size: 15px;
@@ -345,6 +390,7 @@ body {
   text-align: center;
 }
 .function-item p {
+  font-weight: 600;
   margin: 0 0 0 50px;
   display: block;
   vertical-align: middle;
@@ -456,7 +502,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 23px;
   line-height: 70px;
   position: relative;
@@ -466,7 +512,7 @@ body {
   box-shadow: #e2e2e2 0px 10px 0px, rgba(0, 0, 0, 0.1) 0px -3px 9px;
 }
 .tabs__caption li:before {
-  border-left: 1px dashed #ccc;
+  background: url(../images/v-line2.png) center;
   width: 1px;
   position: absolute;
   top: 8px;
@@ -503,6 +549,7 @@ body {
 }
 .tabs__caption li.active {
   color: #fff;
+  font-weight: 600;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.37);
   background: #8D8D8D;
   border: none;
@@ -599,7 +646,7 @@ body {
 }
 .number-table .body .number-col {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 34px;
 }
 .number-table .body .number-col .lighter {
@@ -612,7 +659,7 @@ body {
   line-height: 34px;
   font-size: 20px;
   color: #00840f;
-  font-weight: 300;
+  font-weight: 400;
 }
 .number-col {
   width: 22%;
@@ -711,6 +758,7 @@ body {
   font-weight: 700;
   font-size: 23px;
   margin: 0;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.19);
 }
 .change-tarif-wrap .item .body-block {
   padding-bottom: 17px;
@@ -764,6 +812,7 @@ body {
   color: #279dc5;
   display: inline-block;
   position: relative;
+  font-weight: 500;
   text-decoration: none;
 }
 .deteil:after {
@@ -838,6 +887,7 @@ body {
 }
 .change-nise-number .triangle-effect .deteil {
   font-size: 20px;
+  font-weight: 500;
 }
 .settings-ats {
   background: #f6f6f6 url(../images/pattern2.png) center bottom no-repeat;
@@ -852,6 +902,7 @@ body {
 }
 .settings-ats .center-block .deteil {
   font-size: 20px;
+  font-weight: 500;
 }
 .virt-ats {
   background: #5CC313;
@@ -873,6 +924,7 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  font-weight: 500;
 }
 .change-tarif-wrap._ats .item {
   width: 310px;
@@ -910,6 +962,7 @@ body {
   margin: 1px 19px 25px;
   font-size: 15px;
   list-style: none;
+  font-weight: 600;
 }
 .opportunity-list.has-more {
   margin-bottom: 0;
@@ -967,6 +1020,7 @@ label {
   font-size: 13px;
   display: block;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 .fifty {
   margin: 0 -8px;
@@ -983,6 +1037,9 @@ label {
 }
 .form-group .errorMsg {
   display: none;
+}
+.form-group.invalidElem .errorMsg {
+  display: block;
 }
 .form-group .icon {
   font-size: 26px;
@@ -1210,12 +1267,16 @@ label {
   padding: 45px 0;
   border-bottom: 1px solid #BFBFBF;
 }
+.foot-wrap .deteil {
+  font-weight: 600;
+}
 .foot-wrap .footer {
   width: 990px;
   margin: 0 auto;
 }
 .foot-wrap .footer .product {
   float: right;
+  font-weight: 600;
   margin: 8px 31px 0 0;
 }
 .foot-wrap .footer .product .logo-p {
@@ -1277,7 +1338,10 @@ div.errorMsg {
   color: #CC1B1B;
   position: absolute;
   bottom: -15px;
-  left: 5px;
+  left: 7px;
+}
+.form-area + div.errorMsg {
+  left: 0;
 }
 .invalidElem {
   margin-bottom: 25px;

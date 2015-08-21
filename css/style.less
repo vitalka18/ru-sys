@@ -21,7 +21,7 @@ body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
 }
 .main-wrapper{
@@ -72,7 +72,7 @@ body {
 	margin: 0 20px 0 0;
 	.work-hours{
 		font-size: 13px;
-		font-weight: 300;
+		font-weight: 400;
 		text-align: left;
 	}
 }
@@ -147,7 +147,7 @@ body {
 		}
 	}
 	.text{
-		font-weight: 700;
+		font-weight: 500;
 		font-style: normal;
 		text-align: left;
 		margin-left: 14px;
@@ -179,7 +179,7 @@ body {
 	height: 426px;
 	width: 373px;
 	background: url(../images/modern-phone.png) center no-repeat;
-	top: -60px;
+	top: -56px;
 	left: 35px;
 }
 .blue{
@@ -192,7 +192,7 @@ body {
 	font-size: 43.8px;
 	font-weight: bold;
 	.smaller{
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 31px;
 	}
 }
@@ -203,31 +203,47 @@ body {
 	color: #fff;
 	line-height: 33px;
     margin: 5px 0 24px;
+    text-shadow: -1px -1px 0 rgba(0,0,0,.19);
 }
 .blue-container{
 	background: url(../images/body-bg.png) center top no-repeat;
 	height: 411px;
 	margin: 41px -45px -90px;
-	padding: 50px 45px;
+	padding: 20px 45px;
 }
 .bc-right, .bc-left{
 	width: 350px;
 
 }
-.bc-right{float: right;}
-.bc-left{float: left;}
+.bc-right{margin-top: 30px;float: right;}
+.bc-left{margin-top: 30px;float: left;}
 .bc-center{
 	text-align: center;
 	font-size: 20px;
 	font-weight: 400;
+	width: 470px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	&:after,&:before{
+		content: '';
+		width: 3px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: url(../images/v-line.png) center repeat-y;
+	}
+	&:after{right: 0;}
+	&:before{left: 0;}
 	.title{
 		font-size: 33px;
 		color: #fff;
 		font-weight: 700;
-		text-shadow: -2px -2px 0 rgba(0,0,0,.19);
+		text-shadow: -1px -1px 0 rgba(0,0,0,.19);
 		margin: 1px 0 8px;
 	}
-	p{margin: 8px 0;}
+	p{margin: 8px 0;color: #00394c;font-weight: 400;}
 	p b{
 		text-shadow: 1px 1px 0px #20c9fc;
 	}
@@ -240,11 +256,13 @@ body {
 	}
 	.from, .measure{
 		font-size: 20px;
+		font-weight: 400;
 		color: #00394c;
 	}
 	.value{
 		font-size: 70px;
 		color: #00394c;
+		font-weight: 700;
 		text-shadow: 1px 1px 0px #20c9fc;
 	}
 }
@@ -254,7 +272,7 @@ body {
 	display: inline-block;
 	padding: 15px 50px;
 	font-size: 23px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 30px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -289,7 +307,7 @@ body {
 }
 .black-title-n{
 	font-size: 33px;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
 }
 .black-title-b{
@@ -300,6 +318,23 @@ body {
 }
 .atc-functions{
 	padding: 5px 18px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: 30px;
+		right: 0;left: 0;
+		width: 100%;
+		height: 130px;
+	    background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+		background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+		background: -ms-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+		background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+		background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+	}
+	&.active:after{
+		display: none;
+	}
 }
 .function-item{
 	font-size: 15px;
@@ -329,7 +364,8 @@ body {
 		font-size: 18px;
 		text-align: center;
 	}
-	p{
+	p{	
+		font-weight: 600;
 		margin: 0 0 0 50px;
 	    display: block;
 	    vertical-align: middle;
@@ -441,7 +477,7 @@ body {
 		text-align: center;
 		text-transform: uppercase;
 		cursor: pointer;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 23px;
 		line-height: 70px;
 		position: relative;
@@ -450,7 +486,7 @@ body {
 	       -moz-box-shadow: #e2e2e2 0px 10px 0px, rgba(0,0,0,.1) 0px -3px 9px;
 			    box-shadow: #e2e2e2 0px 10px 0px, rgba(0,0,0,.1) 0px -3px 9px;
 		&:before{
-			border-left: 1px dashed #ccc;
+			background: url(../images/v-line2.png) center;
 			width: 1px;
 			position: absolute;
 			top: 8px;
@@ -480,6 +516,7 @@ body {
 		&:hover:after{display: none;}
 		&.active{
 			color: #fff;
+			font-weight: 600;
 			text-shadow: -1px -1px 0 rgba(0,0,0,.37); 
 			background: #8D8D8D;
 			border:none;
@@ -574,7 +611,7 @@ body {
 		}
 		.number-col{
 			font-size: 20px;
-			font-weight: 300;
+			font-weight: 400;
 			line-height: 34px;
 			.lighter{
 				color: #878787;
@@ -587,7 +624,7 @@ body {
 			line-height: 34px;
 			font-size: 20px;
 			color: #00840f;
-			font-weight: 300;
+			font-weight: 400;
 		}
 	}
 }
@@ -681,6 +718,7 @@ body {
 			font-weight: 700;
 			font-size: 23px;
 			margin: 0;
+			text-shadow: -1px -1px 0 rgba(0,0,0,.19);
 		}
 		.body-block{
 			padding-bottom: 17px;
@@ -726,6 +764,7 @@ body {
 	color: #279dc5;
 	display: inline-block;
 	position: relative;
+	font-weight: 500;
 	text-decoration: none;
 	&:after{
 		display: block;
@@ -800,6 +839,7 @@ body {
 		padding: 15px 0;
 		.deteil{
 			font-size: 20px;
+			font-weight: 500;
 		}
 	}
 }
@@ -814,6 +854,7 @@ body {
 		padding: 15px 0;
 		.deteil{
 			font-size: 20px;
+			font-weight: 500;
 		}
 	}
 }
@@ -829,7 +870,7 @@ body {
 .change-tarif-wrap._ats{
 	margin-top: 40px;
 	.center-block{margin: 0;padding: 0;}
-	.deteil{font-size: 15px;margin: 0;padding: 0;}
+	.deteil{font-size: 15px;margin: 0;padding: 0;font-weight: 500;}
 	.item{
 		width: 310px;
 		margin-left: 16px;
@@ -883,6 +924,7 @@ body {
     margin: 1px 19px 25px;
     font-size: 15px;
 	list-style: none;
+	font-weight: 600;
 	li{
 		margin-bottom: 7px;
 		&:before{
@@ -925,6 +967,7 @@ label{
 	font-size: 13px;
 	display: block;
 	margin-bottom: 8px;
+	font-weight: 600;
 }
 .fifty{
 	margin: 0 -8px;
@@ -939,6 +982,7 @@ label{
 	margin-bottom: 15px;
 	position: relative;
 	.errorMsg{display: none;}
+	&.invalidElem .errorMsg{display: block;}
 	.icon{
 		font-size: 26px;
 		position: absolute;
@@ -1165,11 +1209,13 @@ label{
 	background: #F6F6F6;
 	padding: 45px 0;
 	border-bottom: 1px solid #BFBFBF;
+	.deteil{font-weight: 600;}
 	.footer{
 		width: 990px;
 		margin: 0 auto;
 		.product{
 			float: right;
+			font-weight: 600;
 			margin: 8px 31px 0 0;
 			.logo-p{
 				float: right;
@@ -1233,15 +1279,18 @@ div.errorMsg {
 	color: #CC1B1B;
 	position: absolute;
 	bottom: -15px;
-	left: 5px;
+	left: 7px;
 }
+.form-area+div.errorMsg{
+	left: 0;
+}
+
 .invalidElem {
 	 margin-bottom: 25px;
 	.form-control,.form-area{
 		-webkit-box-shadow: inset #CC1B1B 0px 0px 7px;
 	    -moz-box-shadow: inset #CC1B1B 0px 0px 7px;
 	    box-shadow: inset #CC1B1B 0px 0px 7px;
-
 	}
 	.icon{
 		color: #CC1B1B;
