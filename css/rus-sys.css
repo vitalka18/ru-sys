@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rus-sys';
-  src: url('fonts/rus-sys.eot?76564297');
-  src: url('fonts/rus-sys.eot?76564297#iefix') format('embedded-opentype'),
-       url('fonts/rus-sys.woff?76564297') format('woff'),
-       url('fonts/rus-sys.ttf?76564297') format('truetype'),
-       url('fonts/rus-sys.svg?76564297#rus-sys') format('svg');
+  src: url('fonts/rus-sys.eot?58474274');
+  src: url('fonts/rus-sys.eot?58474274#iefix') format('embedded-opentype'),
+       url('fonts/rus-sys.woff?58474274') format('woff'),
+       url('fonts/rus-sys.ttf?58474274') format('truetype'),
+       url('fonts/rus-sys.svg?58474274#rus-sys') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rus-sys';
-    src: url('../font/rus-sys.svg?76564297#rus-sys') format('svg');
+    src: url('../font/rus-sys.svg?58474274#rus-sys') format('svg');
   }
 }
 */
@@ -54,9 +54,13 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon2-phone:before { content: '\e800'; } /* '' */
 .icon2-right-open:before { content: '\e801'; } /* '' */
 .icon2-left-open:before { content: '\e802'; } /* '' */
+.icon2-rouble:before { content: '\e803'; } /* '' */
+.icon2-cancel:before { content: '\e804'; } /* '' */
 .icon2-torso:before { content: '\e805'; } /* '' */
+.icon2-calendar:before { content: '\e806'; } /* '' */
 .icon2-mobile-2:before { content: '\e808'; } /* '' */
 .icon2-cw:before { content: '\e809'; } /* '' */
 .icon2-ok:before { content: '\e80a'; } /* '' */

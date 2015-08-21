@@ -1,7 +1,11 @@
 
+.icon2-phone:before { content: '\e800'; } /* '' */
 .icon2-right-open:before { content: '\e801'; } /* '' */
 .icon2-left-open:before { content: '\e802'; } /* '' */
+.icon2-rouble:before { content: '\e803'; } /* '' */
+.icon2-cancel:before { content: '\e804'; } /* '' */
 .icon2-torso:before { content: '\e805'; } /* '' */
+.icon2-calendar:before { content: '\e806'; } /* '' */
 .icon2-mobile-2:before { content: '\e808'; } /* '' */
 .icon2-cw:before { content: '\e809'; } /* '' */
 .icon2-ok:before { content: '\e80a'; } /* '' */

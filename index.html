@@ -10,31 +10,35 @@
 		<![endif]-->
 		<link href="css/normalize.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/rus-sys.css">
+		<link rel="stylesheet" href="vendor/slick/slick.css">		
+		<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main-wrapper">
-			<header class="header clearfix">
-	 			<div class="logo">
-	 				<a href="#" title="Русские Системы">
-	 					<img src="images/logo.png" alt="Русские Системы">
-	 				</a>
-	 			</div>
-	 			<div class="header-number">
-	 				<div class="phone">+7 (499) 226-9-226</div>
-	 				<div class="work-hours">с 9:00 до 18:00</div>
-	 			</div>
-	 			<nav class="navbar">
-	 				<ul class="main-menu">
-	 					<li><a href="#">О компании</a></li>
-	 					<li><a href="#">Номера</a></li>
-	 					<li><a href="#">Тарифы</a></li>
-	 					<li><a href="#">Услуги</a></li>
-	 					<li><a href="#">Контакты</a></li>
-	 				</ul>
-	 			</nav>
-	 		</header><!-- end .header -->
-	 		<aside class="base-info center-block">
+			<div class="header-wrap">
+				<header class="header clearfix">
+		 			<div class="logo">
+		 				<a href="#" title="Русские Системы">
+		 					<img src="images/logo.png" alt="Русские Системы">
+		 				</a>
+		 			</div>
+		 			<div class="header-number">
+		 				<div class="phone">+7 (499) 226-9-226</div>
+		 				<div class="work-hours">с 9:00 до 18:00</div>
+		 			</div>
+		 			<nav class="navbar">
+		 				<ul class="main-menu">
+		 					<li><a href="#wayp1" class="track">О компании</a></li>
+		 					<li><a href="#wayp2" class="track">Номера</a></li>
+		 					<li><a href="#wayp3" class="track">Тарифы</a></li>
+		 					<li><a href="#wayp4" class="track">Услуги</a></li>
+		 					<li><a href="#map-canvas" class="track">Контакты</a></li>
+		 				</ul>
+		 			</nav>
+		 		</header><!-- end .header -->
+			</div>
+	 		<aside id="wayp1" class="base-info center-block">
 	 			<div class="base-info-item">
 	 				<span class="icon-circul  icon2-star-filled"></span>
 	 				<div class="text">7 лет<br>на рынке</div>
@@ -44,50 +48,2270 @@
 	 				<address class="text">г. Москва, <br> ул. 6-я Радиальная, д. 24</address>
 	 			</div>
 	 		</aside><!-- end .base-info -->
-	 		<div class="container offical-partners-wrap">
-	 			<div class="moder-phone"><!-- здесь картинка телефона --></div>
-	 			<div class="offical-partners">
-	 				<div class="op-title">Мы официальные партнеры <img src="images/rostelcom-logo.png"  alt="Ростелком"></div>
-	 				<div class="conect-number">
-	 					 Подключаем номера в кодах <br>
-						 <em class="blue">495</em>, <em class="blue">499</em> и <em class="blue">8-(800)</em> <br>
-						 <small class="smaller">с бесплатной настройкой <em class="blue">АТС</em> «под ключ»</small>
-	 				</div>
-	 			</div><!-- end .offical-partners -->
-	 			<div class="blue-container clearfix">
-	 				<div class="bc-left">
-	 					<h2 class="light-white-title">
-	 						Безлимитные тарифы:
-	 					</h2>
-	 					<div class="bc-info">
-	 						<div class="from">от</div>
-	 						<div class="value">2500</div>
-	 						<div class="measure">руб/<br>мес</div>
-	 					</div>
-	 				</div>
-	 				<div class="bc-right">
-	 					<h2 class="light-white-title">
-	 						Поминутная тарификация
-	 					</h2>
-	 					<div class="bc-info">
-	 						<div class="from">от</div>
-	 						<div class="value">48</div>
-	 						<div class="measure">коп./<br>мин.</div>
-	 					</div>
-	 				</div>
-	 				<div class="bc-center">
-	 					<h2 class="title">Бесплатно!</h2>
-	 					<p><b>Подключение номеров в коде (499)</b></p>
-	 					<p>Если успеете забронировать номер <br>в течение 10 часов</p>
-	 					<a href="#" class="get-number">Выбрать номер</a>
-	 				</div>
-	 			</div><!-- blue-container -->
-				<section class="get-ats">
-					<h3 class="black-title-n">Уже через 24 часа вы получите настроенную АТС</h3>
-				</section>
+	 		<div class="pattern-wrap">
+	 			<div class="container offical-partners-wrap">
+		 			<div class="moder-phone"><!-- здесь картинка телефона --></div>
+		 			<div class="offical-partners">
+		 				<div class="op-title">Мы официальные партнеры <img src="images/rostelcom-logo.png"  alt="Ростелком"></div>
+		 				<div class="conect-number">
+		 					 Подключаем номера в кодах <br>
+							 <em class="blue">495</em>, <em class="blue">499</em> и <em class="blue">8-(800)</em> <br>
+							 <small class="smaller">с бесплатной настройкой <em class="blue">АТС</em> «под ключ»</small>
+		 				</div>
+		 			</div><!-- end .offical-partners -->
+		 			<div class="blue-container clearfix">
+		 				<div class="bc-left">
+		 					<h2 class="light-white-title">
+		 						Безлимитные<br> тарифы:
+		 					</h2>
+		 					<div class="bc-info">
+		 						<div class="from">от</div>
+		 						<div class="value">2500</div>
+		 						<div class="measure">руб/<br>мес</div>
+		 					</div>
+		 				</div>
+		 				<div class="bc-right">
+		 					<h2 class="light-white-title">
+		 						Поминутная тарификация
+		 					</h2>
+		 					<div class="bc-info">
+		 						<div class="from">от</div>
+		 						<div class="value">48</div>
+		 						<div class="measure">коп./<br>мин.</div>
+		 					</div>
+		 				</div>
+		 				<div class="bc-center">
+		 					<h2 class="title">Бесплатно!</h2>
+		 					<p><b>Подключение номеров в коде (499)</b></p>
+		 					<p>Если успеете забронировать номер <br>в течение 10 часов</p>
+		 					<a href="#wayp2" class="track get-number">Выбрать номер</a>
+		 				</div>
+		 			</div><!-- blue-container -->
+		 		</div><!-- end .offical-partners-wrap -->
+		 		<section class="benefit-block container-small">
+		 			<h3 class="black-title-n">Уже через 24 часа вы получите настроенную АТС</h3>
+		 			<div class="atc-functions clearfix">
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Многоканальная связь</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Голосове<br> меню</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Запись разговоров</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Переадресация вызовов</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Онлайн<br> офис</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Интеграция с CRM</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Многоканальная связь</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Голосовое <br>меню</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Многоканальная связь</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Голосове <br> меню</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Запись разговоров</p>
+		 				</div>
+		 				<div class="function-item">
+		 					<span class="circul-icon-red icon2-ok-1"></span>
+		 					<p>Переадресация вызовов</p>
+		 				</div>
+		 				<div id="more-phone" class="more">
+		 					<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове<br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Онлайн<br> офис</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Интеграция с CRM</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосовое <br>меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Многоканальная связь</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Голосове <br> меню</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Запись разговоров</p>
+			 				</div>
+			 				<div class="function-item">
+			 					<span class="circul-icon-red icon2-ok-1"></span>
+			 					<p>Переадресация вызовов</p>
+			 				</div>
+		 				</div>
+		 			</div>
+		 		</section><!-- end .benefit-block container -->
+		 		<div class="triangle-effect center-block">
+		 				<button class="open-more" data-hide="#more-phone" >
+		 					<span class="show-text"><span class="icon2-cw"></span>  и еще 76 функций</span>
+		 					<span class="hide-text">Скрыть</span>
+		 				</button>
+		 		</div>
 	 		</div><!-- end .offical-partners-wrap -->
-		</div><!-- end .main-container -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<section class="change-number-wrap" >
+				<h3 id="wayp2" class="black-title-b">Выберите себе красивый номер</h3>
+				<div class="container">
+					<div class="tabs">
+					  <ul class="tabs__caption clearfix">
+					    <li class="active">Номера 499</li>
+					    <li>Номера 495</li>
+					    <li>Номера 8-(800)</li>
+					  </ul>
+					  <div class="tab-content-wrap">
+					  	<div class="tabs__content active">
+						  	<div class="number-table">
+						  		<div class="header clearfix">
+						  			<div class="number-col">
+						  				Обычные номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+										<div class="number-col">
+						  				Красивые номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+						  		</div>
+						  		<div class="body clearfix">
+						  			<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (499)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div id="number-wrap1" class="more">
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+										</div>
+						  		</div>
+						  	</div>	
+						  	<div class="center-block">
+									<button class="open-more" data-hide="#number-wrap1" >
+					 					<span class="show-text"><span class="icon2-cw"></span> показать еще номера</span>
+					 					<span class="hide-text">Скрыть номера</span>
+					 				</button>
+								</div>					  	
+						  </div><!--tabs__content-->
+						  <div class="tabs__content">
+						    <div class="number-table">
+						  		<div class="header clearfix">
+						  			<div class="number-col">
+						  				Обычные номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+										<div class="number-col">
+						  				Красивые номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+						  		</div>
+						  		<div class="body clearfix">
+						  			<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+7 (495)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div id="number-wrap2" class="more">
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+										</div>
+						  		</div>
+						  	</div>
+						  	<div class="center-block">
+									<button class="open-more" data-hide="#number-wrap2" >
+					 					<span class="show-text"><span class="icon2-cw"></span> показать еще номера</span>
+					 					<span class="hide-text">Скрыть номера</span>
+					 				</button>
+					 			</div>
+						  </div><!--tabs__content-->
+							<div class="tabs__content">
+						    <div class="number-table">
+						  		<div class="header clearfix">
+						  			<div class="number-col">
+						  				Обычные номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+										<div class="number-col">
+						  				Красивые номера
+						  			</div>
+						  			<div class="price-col">
+						  				Цена
+						  			</div>
+										<div class="btn-col">
+											Хочу/Бронь
+										</div>
+						  		</div>
+						  		<div class="body clearfix">
+						  			<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div class="number-col">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				0 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy">Хочу</a>
+											<a href="#form1" class="bron fancy">Бронь</a>
+										</div>
+										<div class="number-col bold">
+						  				<span class="lighter">+8 (800)</span> 2-333-555
+						  			</div>
+						  			<div class="price-col">
+						  				1500 руб.
+						  			</div>
+										<div class="btn-col">
+											<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+											<a href="#form1" class="bron fancy _red">Бронь</a>
+										</div>
+										<div id="number-wrap3" class="more">
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+											<div class="number-col">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				0 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy">Хочу</a>
+												<a href="#form1" class="bron fancy">Бронь</a>
+											</div>
+											<div class="number-col bold">
+							  				<span class="lighter">+7 (499)</span> 2-333-555
+							  			</div>
+							  			<div class="price-col">
+							  				1500 руб.
+							  			</div>
+											<div class="btn-col">
+												<a href="#form1" class="want-btn fancy _blue">Хочу</a>
+												<a href="#form1" class="bron fancy _red">Бронь</a>
+											</div>
+										</div>
+						  		</div>
+						  	</div>
+						  	<div class="center-block">
+									<button class="open-more" data-hide="#number-wrap3" >
+					 					<span class="show-text"><span class="icon2-cw"></span> показать еще номера</span>
+					 					<span class="hide-text">Скрыть номера</span>
+					 				</button>
+								</div>
+						  </div><!--tabs__content-->
+					  </div><!--tabs__contents-wrap-->
+					</div><!-- .tabs-->
+				</div>
+			</section><!-- end .change-number-wrap -->
+			<section class="change-nise-number" id="wayp3">
+				<h3 class="black-title-b">Выберите выгодный тариф для номера</h3>
+				<div class="container">
+					<div class="tabs">
+					  <ul class="tabs__caption clearfix">
+					    <li class="active">Номера 499</li>
+					    <li>Номера 495</li>
+					    <li>Номера 8-(800)</li>
+					  </ul>
+					  <div class="tab-content-wrap">
+					  	<div class="tabs__content active">
+					  		<div class="change-tarif-wrap clearfix">
+					  			<div class="item junior">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Начальный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">295 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item popular">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Популярный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">295 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item happies">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Успешный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">295 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item unlimited">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Безлимитный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">295 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  		</div><!-- .change-tarif-wrap -->
+					  	</div><!-- .tabs__content -->
+					  	<div class="tabs__content">
+					  		<div class="change-tarif-wrap clearfix">
+					  			<div class="item junior">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Начальный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">298 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item popular">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Популярный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">298 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item happies">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Успешный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">298 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item unlimited">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Безлимитный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">298 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  		</div><!-- .change-tarif-wrap -->
+					  	</div>
+					  	<div class="tabs__content">
+					  		<div class="change-tarif-wrap clearfix">
+					  			<div class="item junior">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Начальный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">300 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item popular">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Популярный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">300 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item happies">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Успешный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">300 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  			<div class="item unlimited">
+					  				<div class="item-inner">
+					  					<h4 class="header-title">Безлимитный</h4>
+							  			<div class="body-block">
+							  				<div class="price">
+							  					<div class="val">300 р/мес</div>
+							  					<p>без ограничений линий</p>
+							  				</div>
+							  				<hr class="under-price">
+							  				<p class="content-wrap">Включено минут — 0 мин<br>
+												Звоник на городские — 59 коп<br>
+												Звонки на мобильные — 2.13 руб<br>
+												Звонки на межгород — от 4 руб<br>
+												Входящие — бесплатно!</p>
+												<div class="center-block"><a href="#tel-form" class="deteil fancy">подробнее о тарифе</a></div>
+												<div class="btn-group">
+													<a href="#tel-form" class="change-btn fancy">Выбрать</a>
+												</div>
+							  			</div>
+					  				</div>
+					  			</div><!-- .item -->
+					  		</div><!-- .change-tarif-wrap -->
+					  	</div>
+					  </div>
+					</div>
+				</div>
+			  <div class="triangle-effect center-block">
+	 				Если вы сомневаетесь в выборе,<br>
+					<a href="#tel-form" class="deteil fancy">тогда вам сюда</a>
+		 		</div>
+			</section><!-- end .change-number-wrap -->
+			<section class="settings-ats">
+				<h3 class="black-title-b">Мы настроим вам любую АТС за 24 часа,<br>чтобы вы смогли общаться с клиентами</h3>
+				<div class="change-tarif-wrap _ats clearfix">
+	  			<div class="item virt-ats">
+	  				<div class="item-inner">
+	  					<h4 class="header-title">Виртуальная АТС</h4>
+			  			<div class="body-block">
+			  				<div class="price">
+			  					<div class="val">Бесплатно</div>
+			  					<p>настроим за 24 часа</p>
+			  				</div>
+			  				<hr class="under-price">
+			  				<div class="content-wrapper">
+			  					<h5 class="opportunity">Возможности АТС:</h5>
+				  				<ul class="opportunity-list has-more">
+				  					<li>Голосовые приветствия</li>
+										<li>Запись разговоров сотрудников</li>
+										<li>Голосовое меню</li>
+										<li>Интеграция с CRM</li>
+				  				</ul>
+				  				<div class="more-ol" id="more-ol1">
+				  					<ul class="opportunity-list">
+					  					<li>Голосовые приветствия</li>
+											<li>Запись разговоров сотрудников</li>
+											<li>Голосовое меню</li>
+											<li>Интеграция с CRM</li>
+					  				</ul>
+				  				</div>
+				  				<div class="center-block"><a href="#more-ol1" class="deteil d-more">
+				  					<span class="show">просмотреть полный список</span>
+				  					<span class="hide">скрыть полный список</span>
+				  				</a></div>
+			  				</div>
+								<div class="btn-group">
+									<a href="#tel-form" class="change-btn  fancy">Подключить бесплатно</a>
+								</div>
+			  			</div>
+	  				</div>	
+	  			</div>
+	  			<div class="item fiz-ats">
+	  				<div class="item-inner">
+	  					<h4 class="header-title">Физическая АТС</h4>
+			  			<div class="body-block">
+			  				<div class="price">
+			  					<div class="val">от 10 000 руб</div>
+			  					<p>в зависимости от стоимости<br>оборудования</p>
+			  				</div>
+			  				<hr class="under-price">
+			  				<div class="content-wrapper">
+			  					<h5 class="opportunity">Возможности АТС:</h5>
+				  				<ul class="opportunity-list has-more">
+				  					<li>Голосовые приветствия</li>
+										<li>Запись разговоров сотрудников</li>
+										<li>Голосовое меню</li>
+										<li>Интеграция с CRM</li>
+				  				</ul>
+				  				<div class="more-ol" id="more-ol2">
+				  					<ul class="opportunity-list has-more">
+					  					<li>Голосовые приветствия</li>
+											<li>Запись разговоров сотрудников</li>
+											<li>Голосовое меню</li>
+											<li>Интеграция с CRM</li>
+					  				</ul>
+				  				</div>
+				  				<div class="center-block"><a href="#more-ol2" class="deteil d-more">
+				  					<span class="show">просмотреть полный список</span>
+				  					<span class="hide">скрыть полный список</span>
+				  				</a></div>
+			  				</div>
+								<div class="btn-group">
+									<a href="#tel-form" class="change-btn fancy">Вызвать мастера</a>
+								</div>
+			  			</div>
+	  				</div>	
+	  			</div>
+	  			<div class="item your-ats">
+	  				<div class="item-inner">
+	  					<h4 class="header-title">Ваша АТС</h4>
+			  			<div class="body-block">
+			  				<div class="price">
+			  					<div class="val">от 7000 руб</div>
+			  					<p>в зависимости от установленного<br>оборудования</p>
+			  				</div>
+			  				<hr class="under-price">
+			  				<div class="content-wrapper">
+			  					<h5 class="opportunity">Возможности АТС:</h5>
+				  				<p class="opportunity-list p">Все зависит от установленного 
+										оборудования в вашем помещении</p>
+				  				<ul class="opportunity-list _mod">
+				  					<li>мы проведем диагностику</li>
+										<li>напишем тех условия</li>
+										<li>произведем настройку</li>
+				  				</ul>
+			  				</div>
+								<div class="btn-group">
+									<a href="#tel-form" class="change-btn fancy">Вызвать мастера</a>
+								</div>
+			  			</div>
+	  				</div>	
+	  			</div>
+	  		</div>
+	  		<div class="center-block container">
+	  			Мы ответим на любые вопросы<br>
+					<a href="#tel-form" class="deteil fancy">напишите нам</a>
+	  		</div>
+			</section> <!-- .settings-ats -->
+			<div class="quick-conect">
+				<h3 class="black-title-b">Быстрая связь и консультация</h3>
+				<form id="quick-request" class="form">
+					<div class="row clearfix fifty">
+						<div class="form-group">
+							<label for="namefield1">Укажите как к вам обратиться</label>
+							<input  class="form-control required namei" type="text" id="namefield1" name="namefield1" placeholder="Иванов Иван Иванович">
+							<span class="icon icon2-user-1"></span>
+						</div>
+						<div class="form-group">
+							<label for="telfield1">Укажите телефон для связи</label>
+							<input  class="form-control required teli" type="tel" id="telfield1" name="telfield1" placeholder="+7(___) _-___-___">
+							<span class="icon icon2-mobile-1"></span>
+						</div>
+					</div>
+					<div class="btn-control">
+						<button type="submit" class="sbm-btn">Перезвоните мне!</button>
+					</div>
+				</form>
+				<p class="after-form-text">Мы презвоним вам в течение одной минуты</p>
+			</div><!-- end .quick-conect -->
+			<section class="trust-block">
+				<div class="head-trust">
+					<h3 class="black-title-b">За 7 лет работы<br>наша компания заслужила доверие многих</h3>
+				</div>
+				<div class="client-block container-small">
+					<h5 class="client-title">Вот некоторые наши клиенты</h5>
+					<div class="client-slider-wrap">
+						<div class="slider">
+							<div class="item"><a href="#"><img src="images/slider/s1.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s2.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s3.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s4.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s1.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s2.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s3.png" alt="Клиент"></a></div>
+							<div class="item"><a href="#"><img src="images/slider/s4.png" alt="Клиент"></a></div>
+						</div>						
+					</div>
+				</div>
+				<h3 id="wayp4" class="black-title-b">Мы оказываем полный цикл услуг:<br>от настройки и поддержки АТС до ремонта компьютеров</h3>
+				<h5 class="client-title">Полноценная техническая поддержка в рамках одной компании</h5>
+				<div class="services-wrap clearfix">
+					<div class="services-item ">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+					<div class="services-item">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+					<div class="services-item">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+				</div>
+				<div class="services-wrap clearfix">
+					<div class="services-item">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+					<div class="services-item">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+					<div class="services-item">
+						<ul class="opportunity-list">
+	  					<li>Голосовые приветствия</li>
+							<li>Запись разговоров сотрудников</li>
+							<li>Голосовое меню</li>
+							<li>Интеграция с CRM</li>
+	  				</ul>
+					</div>
+				</div>
+				<div class="btn-control">
+					<a href="#tel-form" class="sbm-btn fancy">Получить коммерческое предложение</a>
+				</div>
+			</section>
+			<section class="have-quetions">
+				<h3 class="black-title-b">	Остались вопросы?<br>Самое время задать их нам!</h3>
+				<form id="have-quetions" class="form">
+					<div class="form-group">
+							<label for="textf">Напишите свой вопрос в поле ввода</label>
+							<textarea class="form-area" name="textf" id="textf" cols="30" rows="10"></textarea>
+						</div>
+					<div class="row clearfix fifty">
+						<div class="form-group">
+							<label for="namefield2">Укажите как к вам обратиться</label>
+							<input  class="form-control required namei" type="text" id="namefield2" name="namefield2" placeholder="Иванов Иван Иванович">
+							<span class="icon icon2-user-1"></span>
+						</div>
+						<div class="form-group">
+							<label for="telfield2">Укажите телефон для связи</label>
+							<input  class="form-control required teli" type="tel" id="telfield2" name="telfield2" placeholder="+7(___) _-___-___">
+							<span class="icon icon2-mobile-1"></span>
+						</div>
+					</div>
+					<div class="btn-control">
+						<button type="submit" class="sbm-btn">Перезвоните мне!</button>
+					</div>
+				</form>
+				<p class="after-form-text">Мы презвоним вам в течение одной минуты</p>
+			</section>
+			<div id="map-canvas" data-title="Русские системы" data-long="55.609423" data-lidt="37.653419" data-zoom="10">
+			</div>
+			<div class="foot-wrap">
+				<footer class="footer clearfix">
+					<div class="copy">&copy; 2015 ru-sys.com</div>
+					<div class="product">
+						<a href="#" class="logo-p">
+							<img src="images/company-logo.png" height="42" width="196" alt="«Зеленый слон»">
+						</a>
+						<div class="text">
+							Все самые лучшие одностраничные сайты<br>
+							делают в компании <a class="deteil" href="#">«Зеленый слон»</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div><!-- end .change-nise-number -->
+		<div id="form1" class="complex-form hide-form">
+			<form id="complex-form" class="complex-form">			    
+			    <div class="step-content-wrap">
+			    	<div id="contenteBlock1" class="contenteBlock current">
+			    		<div class="number-choice">
+			    			<h4 class="nc-title">
+			    				Отличный выбор
+			    			</h4>
+			    			<div class="nc-wrap">
+			    				<div class="left">
+			    					<p>Вы выбрали номер:</p>
+			    					<a class="change-other-number deteil" href="#">
+			    						выбрать другой номер
+			    					</a>
+			    				</div>
+			    				<div class="number">
+			    					<span>+7 (499)</span> 2-333-555
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<h4 class="cf-title">
+			    			Заполните форму, чтобы забронировать номер:
+			    		</h4>
+				      <div class="row clearfix fifty">
+								<div class="form-group">
+									<label for="namefield4">Укажите как к вам обратиться</label>
+									<input  class="form-control required namei" type="text" id="namefield4" name="namefield4" placeholder="Иванов Иван Иванович">
+									<span class="icon icon2-user-1"></span>
+								</div>
+								<div class="form-group">
+									<label for="telfield3">Укажите телефон для связи</label>
+									<input  class="form-control required teli" type="tel" id="telfield4" name="telfield4" placeholder="+7(___) _-___-___">
+									<span class="icon icon2-phone"></span>
+								</div>
+							</div>
+							<div class="btn-control">
+								<a id="step1-btn"  class="sbm-btn">Просмотреть тарифы</a>
+							</div>
+			    </div>
+			 
+			    <div id="contenteBlock2" class="contenteBlock">
+			    	<input type="hidden" name="tarif">
+			    	<h4 class="nc-title">Выберите тариф</h4>
+		        <div class="change-tarif-wrap clearfix">
+			  			<div class="item junior">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Начальный</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">295 р/мес</div>
+					  					<p>без ограничений линий</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<p class="content-wrap">Включено минут — 0 мин<br>
+										Звоник на городские — 59 коп<br>
+										Звонки на мобильные — 2.13 руб<br>
+										Звонки на межгород — от 4 руб<br>
+										Входящие — бесплатно!</p>
+										<div class="btn-group">
+											<a href="#" class="change-btn tarif-change" data-color-t="junior" data-val="Начальный">Выбрать</a>
+										</div>
+					  			</div>
+			  				</div>
+			  			</div><!-- .item -->
+			  			<div class="item popular">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Популярный</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">295 р/мес</div>
+					  					<p>без ограничений линий</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<p class="content-wrap">Включено минут — 0 мин<br>
+										Звоник на городские — 59 коп<br>
+										Звонки на мобильные — 2.13 руб<br>
+										Звонки на межгород — от 4 руб<br>
+										Входящие — бесплатно!</p>
+										<div class="btn-group">
+											<a href="#" class="change-btn tarif-change" data-color-t="popular"  data-val="Популярный">Выбрать</a>
+										</div>
+					  			</div>
+			  				</div>
+			  			</div><!-- .item -->
+			  			<div class="item happies">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Успешный</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">295 р/мес</div>
+					  					<p>без ограничений линий</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<p class="content-wrap">Включено минут — 0 мин<br>
+										Звоник на городские — 59 коп<br>
+										Звонки на мобильные — 2.13 руб<br>
+										Звонки на межгород — от 4 руб<br>
+										Входящие — бесплатно!</p>
+										<div class="btn-group">
+											<a href="#" class="change-btn tarif-change" data-color-t="happies" data-val="Успешный">Выбрать</a>
+										</div>
+					  			</div>
+			  				</div>
+			  			</div><!-- .item -->
+			  			<div class="item unlimited">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Безлимитный</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">295 р/мес</div>
+					  					<p>без ограничений линий</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<p class="content-wrap">Включено минут — 0 мин<br>
+										Звоник на городские — 59 коп<br>
+										Звонки на мобильные — 2.13 руб<br>
+										Звонки на межгород — от 4 руб<br>
+										Входящие — бесплатно!</p>
+										<div class="btn-group">
+											<a href="#" class="change-btn tarif-change" data-color-t="unlimited" data-val="Безлимитный">Выбрать</a>
+										</div>
+					  			</div>
+			  				</div>
+			  			</div><!-- .item -->
+			  		</div><!-- .change-tarif-wrap -->
+		    	</div>
+		 
+			    <div id="contenteBlock3" class="contenteBlock">	
+						<input type="hidden" name="ats">
+			    	<h4 class="nc-title">Выберите АТС</h4> 
+			      <div class="change-tarif-wrap _ats clearfix">
+			  			<div class="item virt-ats">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Виртуальная АТС</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">Бесплатно</div>
+					  					<p>настроим за 24 часа</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<div class="content-wrapper">
+					  					<h5 class="opportunity">Возможности АТС:</h5>
+						  				<ul class="opportunity-list has-more">
+						  					<li>Голосовые приветствия</li>
+												<li>Запись разговоров сотрудников</li>
+												<li>Голосовое меню</li>
+												<li>Интеграция с CRM</li>
+						  				</ul>
+						  				<div class="more-ol" id="more-ol21">
+						  					<ul class="opportunity-list">
+							  					<li>Голосовые приветствия</li>
+													<li>Запись разговоров сотрудников</li>
+													<li>Голосовое меню</li>
+													<li>Интеграция с CRM</li>
+							  				</ul>
+						  				</div>
+						  				<div class="center-block"><a href="#more-ol21" class="deteil d-more">
+						  					<span class="show">просмотреть полный список</span>
+						  					<span class="hide">скрыть полный список</span>
+						  				</a></div>
+					  				</div>
+										<div class="btn-group">
+											<a href="#" class="change-btn select-ats" data-color-t="virt-ats" data-val="Виртуальная АТС">Подключить бесплатно</a>
+										</div>
+					  			</div>
+			  				</div>	
+			  			</div>
+			  			<div class="item fiz-ats">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Физическая АТС</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">от 10 000 руб</div>
+					  					<p>в зависимости от стоимости<br>оборудования</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<div class="content-wrapper">
+					  					<h5 class="opportunity">Возможности АТС:</h5>
+						  				<ul class="opportunity-list has-more">
+						  					<li>Голосовые приветствия</li>
+												<li>Запись разговоров сотрудников</li>
+												<li>Голосовое меню</li>
+												<li>Интеграция с CRM</li>
+						  				</ul>
+						  				<div class="more-ol" id="more-ol22">
+						  					<ul class="opportunity-list has-more">
+							  					<li>Голосовые приветствия</li>
+													<li>Запись разговоров сотрудников</li>
+													<li>Голосовое меню</li>
+													<li>Интеграция с CRM</li>
+							  				</ul>
+						  				</div>
+						  				<div class="center-block"><a href="#more-ol22" class="deteil d-more">
+						  					<span class="show">просмотреть полный список</span>
+						  					<span class="hide">скрыть полный список</span>
+						  				</a></div>
+					  				</div>
+										<div class="btn-group">
+											<a href="#" class="change-btn select-ats" data-color-t="fiz-ats" data-val="Физическая АТС">Вызвать мастера</a>
+										</div>
+					  			</div>
+			  				</div>	
+			  			</div>
+			  			<div class="item your-ats">
+			  				<div class="item-inner">
+			  					<h4 class="header-title">Ваша АТС</h4>
+					  			<div class="body-block">
+					  				<div class="price">
+					  					<div class="val">от 7000 руб</div>
+					  					<p>в зависимости от установленного<br>оборудования</p>
+					  				</div>
+					  				<hr class="under-price">
+					  				<div class="content-wrapper">
+					  					<h5 class="opportunity">Возможности АТС:</h5>
+						  				<p class="opportunity-list p">Все зависит от установленного 
+												оборудования в вашем помещении</p>
+						  				<ul class="opportunity-list _mod">
+						  					<li>мы проведем диагностику</li>
+												<li>напишем тех условия</li>
+												<li>произведем настройку</li>
+						  				</ul>
+					  				</div>
+										<div class="btn-group">
+											<a href="#" class="change-btn select-ats" data-color-t="your-ats" data-val="Ваша АТС">Вызвать мастера</a>
+										</div>
+					  			</div>
+			  				</div>	
+			  			</div>
+			  		</div>
+			    </div>
+			 
+			    <div id="contenteBlock4" class="contenteBlock">
+			        <div class="confirm-request">
+			        	<h4 class="nc-title">Подтверждение заказ</h4>
+			        	<div class="cr-item clearfix">
+			        		<div class="left">Вы выбрали номер:<br><a class="change-other-number deteil">выбрать другой номер</a></div>
+			        		<div class="center "><div class="number"><span>+7 (499)</span> 2-333-555</div></div>
+			        		<div class="right">Стоимость подключения 1500 рублей, <br> абонентская плата согласно выбранному тарифу</div>
+			        	</div>
+			        	<div class="cr-item clearfix">
+			        		<div class="left">Вы выбрали тариф:<br><a class="change-other-tarif deteil">выбрать другой тариф</a></div>
+			        		<div class="center"><div class="tarif">Успешный</div></div>
+			        		<div class="right">Абонентская плата 2100 рублей в месяц, <br>минута разговора от 48 коп</div>
+			        	</div>
+			        	<div class="cr-item clearfix">
+			        		<div class="left">Вы выбрали АТС:<br><a class="change-other-ats deteil">выбрать другой тип АТС</a></div>
+			        		<div class="center "><div class="ats">Виртуальная АТС</div></div>
+			        		<div class="right">Стоимость подключения от 10 000 рублей, цена зависит от выбранного вами офисного 
+оборудования</div>
+			        	</div>
+			        	<div class="btn-control"><button type="submit" class="sbm-btn">Подтвердить заказ</button></div>
+			        </div>
+			    </div>
+			    </div>
+			    <div class="steps clearfix">
+			    	<ul role="tablist">
+			    		<li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+			    			<a id="complex-form-t-0" href="#complex-form-h-0" >
+				    			<span class="icon  icon2-phone"></span>Выбор <br>номера
+				    		</a>
+				    		</li>
+				    		<li role="tab" class="disabled" aria-disabled="true">
+				    			<a id="complex-form-t-1" href="#complex-form-h-1" >
+				    				<span class="icon icon2-rouble"></span>Выбор<br>тарифа
+				    			</a>
+				    		</li>
+				    		<li role="tab" class="disabled" aria-disabled="true">
+				    			<a id="complex-form-t-2" href="#complex-form-h-2" > 
+				    				<span class="icon icon2-calendar"></span>Выбор<br>АТС
+				    			</a>
+				    		</li>
+				    		<li role="tab" class="disabled last" aria-disabled="true">
+				    			<a id="complex-form-t-3" href="#complex-form-h-3">
+				    				<span class="icon icon2-ok-1"></span>Подтверждение<br>заказа
+				    			</a>
+				    		</li>
+				    	</ul>
+				    </div>
+			</form>
+		</div>
+		<div id="tel-form" class="hide-form">
+			<h3 class="black-title-b">Заполните форму, чтобы Вас проконсультировали</h3>
+			<form id="cons-form" class="form">
+				<div class="row clearfix fifty">
+					<div class="form-group">
+						<label for="namefield3">Укажите как к вам обратиться</label>
+						<input  class="form-control required namei" type="text" id="namefield3" name="namefield3" placeholder="Иванов Иван Иванович">
+						<span class="icon icon2-user-1"></span>
+					</div>
+					<div class="form-group">
+						<label for="telfield3">Укажите телефон для связи</label>
+						<input  class="form-control required teli" type="tel" id="telfield3" name="telfield3" placeholder="+7(___) _-___-___">
+						<span class="icon icon2-phone"></span>
+					</div>
+				</div>
+				<div class="btn-control">
+					<button type="submit" class="sbm-btn">Заказать консультацию!</button>
+				</div>
+			</form>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="vendor/slick/slick.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+		<script src="vendor/fancybox/jquery.fancybox.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

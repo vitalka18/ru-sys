@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    function setEqualHeight(columns){
+    function setEqualHeight(columns){//лики одной высоты
         var tallestcolumn = 0;
         columns.each(
         function(){
@@ -10,199 +10,228 @@ $(document).ready(function(){
         });
         columns.height(tallestcolumn);
     };
-    $('textarea').val('');
-/*tooltip*/
-  (function($){
-    var defaults = {
-      startText: 'журнал',
-      item: 'a',
-      objectTitle: 'img',
-      hasTiitle: 'data-title',
-      show: 'mouseenter',
-      hide: 'mouseleave'
-    }
-    $.fn.tooltip = function(options){
-
-      var config = $.extend({},defaults,options);
-
-      $this = $(this);
-      
-      $this.init = function(){
-        $this.on(config.show, config.item, function(e){
-        e.preventDefault();
-        var $that=$(this);
-
-        if(!$(this).children('.tooltip').length){
-            $('<div/>',{
-                "class": "tooltip",
-                text: config.startText+' "'+$(this).find(config.objectTitle).attr(config.hasTiitle) + '"'
-            }).appendTo(this);   
-        }
-        $that.find(config.objectTitle).mousemove(function(e){
-            // положение элемента
-            var pos = $(this).offset();
-            var elem_left = pos.left;
-            var elem_top = pos.top;
-            // положение курсора внутри элемента
-            var Xinner = e.pageX - elem_left;
-            var Yinner = e.pageY - elem_top;
-            $that.children('.tooltip').removeClass('destroy-tooltip')
-                                      .animate({
-                                        opacity: '1' 
-                                      },800)
-                                      .css({
-                                        top: Yinner-25,
-                                        left: Xinner-10
-                                      });
-            //console.log("X: " + Xinner + " Y: " + Yinner); // вывод результата в консоль
-          });
-        });
-        $this.on(config.hide, config.item,function(){
-         $(this).find('.tooltip').addClass('destroy-tooltip');
-        });
-      }
-      
-      /*tooltip*/
-     $this.init();
-     return $this;
-    };
-
-  }(jQuery));
-   $('.tip').tooltip({
-
-   });
-    (function() {
-       var app = {
-           
-          initialize : function () {          
-              this.modules();
-              this.setUpListeners();
-          },
-   
-          modules: function () {
-   
-          },
-   
-          setUpListeners: function () {
-              $('form').on('submit',app.submitForm);        
-          },    
-          submitForm: function (e) {
-            console.log('submit');
-            var $form = $(this);
-            
-            if(app.validateForm($form) === false) {e.preventDefault(); return false;}
-
-            console.log('ajax');
-          },       
-          
-      validateForm: function($form){
-        var inputs = $form.find('input, textarea');
-        valid = true;
-
-        $.each(inputs,function(index,val){
-          var input = $(val),
-            val = input.val();
-            formGroup = input.parents('.field'),
-            textError = 'x';
-            $(formGroup).append('<div class="nameInfo info"></div>').css({position:'relative'});
-            nameInfo = $(formGroup).find('.nameInfo');
-          if(input.hasClass('namevalid')){
-            if(val.length<6){   
-              nameInfo.removeClass('correct').addClass('error').html('').show();
-                        input.removeClass('normal').addClass('wrong').attr({title:'Ви ввели не коректні дані.'});
-                      valid = false;
-                    } else {
-                        nameInfo.removeClass('error').addClass('correct').html('').show();
-                        input.removeClass('wrong').addClass('normal').attr({title:'Все вірно!'});
-                    }
-                }
-                if(input.hasClass('phonevalid')){
-                  var patt = /^[0-9()\-+ ]+$/;
-              if(!patt.test(input.val())){    
-              nameInfo.removeClass('correct').addClass('error').html('').show();
-                        input.removeClass('normal').addClass('wrong').attr({title:'Ви ввели не коректні дані.'});
-                      valid = false;
-                    } else {
-                        nameInfo.removeClass('error').addClass('correct').html('').show();
-                        input.removeClass('wrong').addClass('normal').attr({title:'Все вірно!'});
-                    }
-                }
-                if(input.hasClass('emailvalid')){
-            var patt = /^.+@.+[.].{2,}$/i;
-                if(!patt.test(input.val())){    
-              nameInfo.removeClass('correct').addClass('error').html('').show();
-                        input.removeClass('normal').addClass('wrong').attr({title:'Ви ввели не коректні дані.'});
-                      valid = false;
-                    } else {
-                        nameInfo.removeClass('error').addClass('correct').html('').show();
-                        input.removeClass('wrong').addClass('normal').attr({title:'Все вірно!'});
-                    }
-                }
-        });
-        return valid;
-      }
-      }
-   
-    app.initialize();
-  }());
-}); 
-/*для слайдера*/
-$(function(){
-      SyntaxHighlighter.all();
-    });
-$(window).load(function() {
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 165,
-        itemMargin: 5,
-        asNavFor: '#slider',
-        move: 1,
-        prevText: " ",
-        nextText: " "
-      });
-
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        directionNav: false,
-        slideshow: false,
-        prevText: " ",
-        nextText: " ",
-        sync: "#carousel",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-  $('.default-carusel').flexslider({
-      animation: "slide",
-      controlNav: false,
-      animationLoop: false,
-      itemWidth: 110,
-      slideshow: true,
-      itemMargin: 20,
-      prevText: " ",
-      nextText: " ",
-      move:1
-    });
-});
-$(function(){
-  var toggles = $('.toggle a'),
-      codes = $('.code');
-  
-  toggles.on("click", function(event){
-    event.preventDefault();
-    var $this = $(this);
+    setEqualHeight( $('.change-tarif-wrap._ats .price p') );
     
-    if (!$this.hasClass("active")) {
-      toggles.removeClass("active");
-      $this.addClass("active");
-      codes.hide().filter(this.hash).show();
-    }
-  });
-  toggles.first().click();
+    $(document).on('click','.open-more',function(){//кнопка открития доп инфо
+      $(this).toggleClass('active');
+      var $that = $(this);
+      var $open = $( $that.attr('data-hide') );
+      $open.slideToggle(800);
+    });
+
+    $(document).on('click','.d-more',function(e){//кнопка открития доп инфо
+      e.preventDefault();
+      var $that = $(this);
+      $that.toggleClass('active');
+      var $open = $( $that.attr('href') );
+      $open.slideToggle(500);
+    });
+
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {//табы
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+    $('.slider').slick({//слайдер
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      customPaging: '10px',
+      prevArrow: '<button class="slick-btn prev icon2-left-open"></button>',
+      nextArrow: '<button class="slick-btn next icon2-right-open"></button>'
+    });
+
+    var $map = $('#map-canvas');//карта
+    var longVal,latVal,zoomVal,contenteBlock,titleVal;
+    longVal = $map.attr('data-long');
+    latVal = $map.attr('data-lidt');
+    zoomVal = $map.attr('data-zoom')*1;
+    titleVal = $map.attr('data-title');
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(longVal,latVal);
+        var myCenter = new google.maps.LatLng(55.709429,37.653419);
+        var mapOptions = {
+          zoom: zoomVal,
+          center: myCenter,
+          scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var image = '../images/point-map.png';
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: titleVal,
+            icon: image
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+      $('.track').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('href');
+         $('html, body').animate({scrollTop : $(id).offset().top-100},800);
+      });
+       $("input[type='tel']").mask("+7(999) 9-999-999");
+      $(".fancy").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        padding: 0
+      });
+
+      $('#step1-btn').click(function(e){//комплексна форма 1 крок
+        e.preventDefault();
+        var $wrap = $(this).parents('.contenteBlock'),
+        $inputs = $wrap.find('input');
+        $inputs.each(function(){
+          if($(this).val() == ''){
+            $(this).parents('.form-group').addClass('invalidElem');
+            $(this).parents('.contenteBlock').find('.sbm-btn').addClass('invalid');
+          } else{
+            $(this).parents('.form-group').removeClass('invalidElem');
+            $(this).parents('.form-group').find('.errorMsg').remove();
+            $(this).parents('.contenteBlock').find('.sbm-btn').removeClass('invalid');
+          }
+          if($(this).hasClass('namei') ){
+            if(!$(this).parents('.form-group').find('.errorMsg').length)
+            $(this).parents('.form-group').append('<div class="errorMsg">Это поле необходимо заполнить</div>');
+          } 
+          if($(this).hasClass('teli')){
+            if(!$(this).parents('.form-group').find('.errorMsg').length)
+            $(this).parents('.form-group').addClass('<div class="errorMsg">Введите правильный номер</div>');
+          }
+        });
+        if(!$(this).hasClass('invalid')){
+          $wrap.removeClass('current');
+          $('#contenteBlock2').addClass('current');
+          $('.steps ul li').removeClass('current');
+          $('.steps ul li').eq(1).addClass('current');
+          $('.steps ul li').eq(0).addClass('default');
+        }
+
+      });
+      $('.tarif-change').click(function(e){//комплексна форма 2 крок
+        e.preventDefault();
+        var $that = $(this),
+        $wrap = $(this).parents('.contenteBlock'),
+        $input = $wrap.find('input[name="tarif"]');
+        console.log($input)
+        $input.val($that.attr('data-val'))
+        $wrap.removeClass('current');
+        $('#contenteBlock3').addClass('current');
+        $('#contenteBlock4').find('.center .tarif').addClass($that.attr('data-color-t'))
+        $('.steps ul li').removeClass('current');
+        $('.steps ul li').eq(2).addClass('current');
+        $('.steps ul li').eq(1).addClass('default');
+      });
+
+      $('.select-ats').click(function(e){//комплексна форма 3 крок
+        e.preventDefault();
+        var $that = $(this),
+        $wrap = $(this).parents('.contenteBlock'),
+        $input = $wrap.find('input[name="ats"]');
+        $('#contenteBlock4').find('.center .ats').addClass($that.attr('data-color-t'));
+        console.log($input)
+        $input.val($that.attr('data-val'))
+        $wrap.removeClass('current');
+        $('#contenteBlock4').addClass('current');
+        $('.steps ul li').removeClass('current');
+        $('.steps ul li').eq(3).addClass('current');
+        $('.steps ul li').eq(2).addClass('default');
+      });
+
+      $('#quick-request').validate({//валыдацыя #quick-request
+        highlight: function(element, errorClass) {
+            $(element).parent().addClass("invalidElem");
+        },
+        unhighlight: function(element, errorClass) {
+            $(element).parent().removeClass("invalidElem");
+        },
+        errorElement: "div",
+        errorClass: "errorMsg",
+        rules: {
+          telfield1: "required",
+          namefield1: "required"
+          },
+        messages: {
+          telfield1: "Введите правильный номер",
+          namefield1: "Это поле необходимо заполнить",
+        }
+
+      });
+      $('.change-other-number').click(function(){
+        $.fancybox.close();
+        var id = '#wayp2';
+        $('html, body').animate({scrollTop : $(id).offset().top-100},800);
+      });
+      $('.change-other-tarif ').click(function(){
+        $('.contenteBlock').removeClass('current');
+        $('#contenteBlock2').addClass('current');
+        $('.steps ul li').removeClass('current');
+        $('.steps ul li').eq(1).addClass('current');
+        $('.steps ul li').eq(2).removeClass('default');
+        $('.steps ul li').eq(3).removeClass('default');
+      });
+      $('.change-other-ats').click(function(){
+        $('.contenteBlock').removeClass('current');
+        $('#contenteBlock3').addClass('current');
+        $('.steps ul li').removeClass('current');
+        $('.steps ul li').eq(2).addClass('current');
+        $('.steps ul li').eq(3).removeClass('default');
+      });
+      $('#cons-form').validate({//валыдацыя #cons-form
+        highlight: function(element, errorClass) {
+            $(element).parent().addClass("invalidElem");
+        },
+        unhighlight: function(element, errorClass) {
+            $(element).parent().removeClass("invalidElem");
+        },
+        errorElement: "div",
+        errorClass: "errorMsg",
+        rules: {
+          telfield3: "required",
+          namefield3: "required"
+          },
+        messages: {
+          telfield3: "Введите правильный номер",
+          namefield3: "Это поле необходимо заполнить",
+        }
+
+      });
+      $('#have-quetions').validate({//валыдацыя #have-quetions
+        highlight: function(element, errorClass) {
+            $(element).parent().addClass("invalidElem");
+        },
+        unhighlight: function(element, errorClass) {
+            $(element).parent().removeClass("invalidElem");
+        },
+        errorElement: "div",
+        errorClass: "errorMsg",
+        rules: {
+          telfield2: "required",
+          namefield2: "required",
+          textf: "required"
+          },
+        messages: {
+          telfield2: "Введите правильный номер",
+          namefield2: "Это поле необходимо заполнить",
+          textf: "Оставте коментарий"
+        }
+
+      });
+      
+    $.validator.setDefaults({
+      submitHandler: function() {
+        console.log(e);
+        $.fancybox.open('<h3 class="black-title-b">Спасибо! Мы перезвоним вам в ближайшее время</h3>');//попап після відправки форми
+      }
+    });
+    
 });
 /*для слайдера*/
